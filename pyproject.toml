@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ynab-expense-sharing"
+version = "0.1.0"
+description = "A tool for sharing expenses with one other person in YNAB"
+authors = ["Matthew Scheffel <matt@dataheck.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ynab-sdk = "^0.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
