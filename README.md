@@ -4,6 +4,8 @@
 
 Does not require a shared credit card or chequing account. 
 
+Set your `YNAB_API_KEY` key in `.env`.
+
 ----
 
 This software enables expense sharing for two users. For simplicity, we'll call the two users the expense payer[^1] and the expense receiver, though both users will be in both roles over time, assuming they both pay for shared expenses. 
