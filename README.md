@@ -4,7 +4,7 @@
 
 Does not require a shared credit card or chequing account. 
 
-Set your `YNAB_API_KEY` key in `.env`.
+Set your `YNAB_API_ID` and `YNAB_API_SECRET` in `.env`.
 
 ----
 
