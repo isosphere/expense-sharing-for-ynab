@@ -1,0 +1,453 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -175.55554857960482,
+    "scrollLeft": -93.33332962460004,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "PostgreSQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "b6c879b0-8f9a-4b23-9a5c-2df205d582d1",
+        "name": "user",
+        "comment": "",
+        "columns": [
+          {
+            "id": "4f764b78-82f4-4326-85b0-41aafbebffeb",
+            "name": "id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 55.3704,
+          "top": 74.9084,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "f635768e-c3e3-4ec4-88b2-968b2f754fcc",
+        "name": "ynab_budget_category",
+        "comment": "",
+        "columns": [
+          {
+            "id": "bca0cc06-5a8b-4824-bb8d-6d25ea78254a",
+            "name": "id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "aa295961-5700-49f1-8d7d-e471a01a1f92",
+            "name": "user_id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d4b6d368-199c-4645-92c9-2e1484245982",
+            "name": "ynab_id",
+            "comment": "the object's YNAB-internal ID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "03100758-47cf-4ea0-8796-a28893d6a53d",
+            "name": "budget_id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 20.833,
+          "top": 312.4998,
+          "zIndex": 1,
+          "widthName": 134.2724609375,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "c60425ed-2417-48f0-ada4-7be189891602",
+        "name": "ynab_account",
+        "comment": "",
+        "columns": [
+          {
+            "id": "5f51beb5-ea43-4b19-8ede-2fc8d997cbea",
+            "name": "id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "90e42d35-81ea-491b-966f-31657fdc038c",
+            "name": "user_id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ad145485-b9c7-4932-ae74-07f1db071add",
+            "name": "ynab_id",
+            "comment": "the object's YNAB-internal ID",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1e28f535-6354-4b48-b4d3-245f5f13041c",
+            "name": "budget_id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 567.778,
+          "top": 50.1842,
+          "zIndex": 2,
+          "widthName": 82.95166015625,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "7f6c1a35-9f7a-4b4f-9b56-fdf8cd374a60",
+        "name": "budget",
+        "comment": "",
+        "columns": [
+          {
+            "id": "e3b075ce-42d5-4ab1-835a-202dc4cf29d9",
+            "name": "id",
+            "comment": "",
+            "dataType": "bigserial",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 599.6764,
+          "top": 347.9168,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "id": "b0f206e8-3fc3-4133-b5e5-837e5b867dc7",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "b6c879b0-8f9a-4b23-9a5c-2df205d582d1",
+          "columnIds": [
+            "4f764b78-82f4-4326-85b0-41aafbebffeb"
+          ],
+          "x": 228.8704,
+          "y": 164.4084,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "f635768e-c3e3-4ec4-88b2-968b2f754fcc",
+          "columnIds": [
+            "aa295961-5700-49f1-8d7d-e471a01a1f92"
+          ],
+          "x": 224.333,
+          "y": 312.4998,
+          "direction": "top"
+        },
+        "constraintName": "fk_user_to_ynab_budget_category",
+        "visible": true
+      },
+      {
+        "id": "8d4ffd16-68f0-4eec-8c77-8555882002d0",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "b6c879b0-8f9a-4b23-9a5c-2df205d582d1",
+          "columnIds": [
+            "4f764b78-82f4-4326-85b0-41aafbebffeb"
+          ],
+          "x": 402.3704,
+          "y": 119.6584,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "c60425ed-2417-48f0-ada4-7be189891602",
+          "columnIds": [
+            "90e42d35-81ea-491b-966f-31657fdc038c"
+          ],
+          "x": 567.778,
+          "y": 125.6842,
+          "direction": "left"
+        },
+        "constraintName": "fk_user_to_ynab_account",
+        "visible": true
+      },
+      {
+        "id": "ef04e844-d436-4a2f-ac87-a70c83d14e57",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7f6c1a35-9f7a-4b4f-9b56-fdf8cd374a60",
+          "columnIds": [
+            "e3b075ce-42d5-4ab1-835a-202dc4cf29d9"
+          ],
+          "x": 773.1764,
+          "y": 347.9168,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "c60425ed-2417-48f0-ada4-7be189891602",
+          "columnIds": [
+            "1e28f535-6354-4b48-b4d3-245f5f13041c"
+          ],
+          "x": 771.278,
+          "y": 201.1842,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_budget_to_ynab_account",
+        "visible": true
+      },
+      {
+        "id": "b51c92e7-0bbe-48c0-9e63-83a7a64c035a",
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7f6c1a35-9f7a-4b4f-9b56-fdf8cd374a60",
+          "columnIds": [
+            "e3b075ce-42d5-4ab1-835a-202dc4cf29d9"
+          ],
+          "x": 599.6764,
+          "y": 392.6668,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "f635768e-c3e3-4ec4-88b2-968b2f754fcc",
+          "columnIds": [
+            "03100758-47cf-4ea0-8796-a28893d6a53d"
+          ],
+          "x": 427.83299999999997,
+          "y": 387.9998,
+          "direction": "right"
+        },
+        "constraintName": "fk_budget_to_ynab_budget_category",
+        "visible": true
+      }
+    ]
+  }
+}
